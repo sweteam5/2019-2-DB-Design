@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `customer`;
 CREATE TABLE `customer` (
   `ID` int(11) NOT NULL,
   `name` varchar(50) DEFAULT NULL,
-  `phone_numver` int(11) DEFAULT NULL,
+  `phone_number` int(11) DEFAULT NULL,
   `point` int(11) DEFAULT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -37,6 +37,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
+INSERT INTO `customer` VALUES (1,'Kim',123456,10),(2,'Park',123457,100),(3,'Lee',223457,150);
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-30  0:37:27
+-- Dump completed on 2019-12-02 20:54:16

@@ -35,6 +35,7 @@ CREATE TABLE `seat_type` (
 
 LOCK TABLES `seat_type` WRITE;
 /*!40000 ALTER TABLE `seat_type` DISABLE KEYS */;
+INSERT INTO `seat_type` VALUES ('best',2),('child',2),('normal',1);
 /*!40000 ALTER TABLE `seat_type` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -47,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-30  0:37:30
+-- Dump completed on 2019-12-02 20:54:19

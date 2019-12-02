@@ -27,7 +27,7 @@ CREATE TABLE `theater_review` (
   `Branch_ID` int(11) NOT NULL,
   `Theater_ID` int(11) NOT NULL,
   `rating` int(11) DEFAULT NULL,
-  `cotent` varchar(50) DEFAULT NULL,
+  `content` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`Customer_ID`,`Branch_ID`,`Theater_ID`),
   KEY `Branch_ID` (`Branch_ID`,`Theater_ID`),
   CONSTRAINT `theater_review_ibfk_1` FOREIGN KEY (`Customer_ID`) REFERENCES `customer` (`ID`),
@@ -41,6 +41,7 @@ CREATE TABLE `theater_review` (
 
 LOCK TABLES `theater_review` WRITE;
 /*!40000 ALTER TABLE `theater_review` DISABLE KEYS */;
+INSERT INTO `theater_review` VALUES (1,1,1,5,'best'),(1,1,2,4,'good'),(1,1,3,3,'hmp'),(1,2,1,5,'best'),(2,1,3,3,'hmp'),(3,2,1,2,'not good');
 /*!40000 ALTER TABLE `theater_review` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-30  0:37:28
+-- Dump completed on 2019-12-02 20:54:17

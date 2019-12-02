@@ -40,6 +40,7 @@ CREATE TABLE `movie_review` (
 
 LOCK TABLES `movie_review` WRITE;
 /*!40000 ALTER TABLE `movie_review` DISABLE KEYS */;
+INSERT INTO `movie_review` VALUES (1,1,5,'hello'),(2,3,4,'good'),(3,2,1,'bad');
 /*!40000 ALTER TABLE `movie_review` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-30  0:37:29
+-- Dump completed on 2019-12-02 20:54:18

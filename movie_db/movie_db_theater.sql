@@ -26,7 +26,7 @@ CREATE TABLE `theater` (
   `Branch_ID` int(11) NOT NULL,
   `ID` int(11) NOT NULL,
   `name` varchar(50) DEFAULT NULL,
-  `capcaity` int(11) DEFAULT NULL,
+  `capacity` int(11) DEFAULT NULL,
   `price` int(11) DEFAULT NULL,
   PRIMARY KEY (`Branch_ID`,`ID`),
   CONSTRAINT `Branch_ID` FOREIGN KEY (`Branch_ID`) REFERENCES `branch` (`ID`)
@@ -39,6 +39,7 @@ CREATE TABLE `theater` (
 
 LOCK TABLES `theater` WRITE;
 /*!40000 ALTER TABLE `theater` DISABLE KEYS */;
+INSERT INTO `theater` VALUES (1,1,'1',100,10000),(1,2,'2',100,10000),(1,3,'3',150,11000),(2,1,'1',110,11000),(3,1,'1',100,12000),(3,2,'2',100,12000);
 /*!40000 ALTER TABLE `theater` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-30  0:37:28
+-- Dump completed on 2019-12-02 20:54:17
